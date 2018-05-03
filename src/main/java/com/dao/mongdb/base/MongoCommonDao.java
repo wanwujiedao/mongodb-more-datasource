@@ -43,7 +43,7 @@ public abstract class MongoCommonDao<T> {
      * @return java.util.List<T>
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public List<T> find(Query query) {
@@ -58,7 +58,7 @@ public abstract class MongoCommonDao<T> {
      * @return java.util.List<T>
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public List<T> find(Query query, String collectionName) {
@@ -74,7 +74,7 @@ public abstract class MongoCommonDao<T> {
      * @return java.util.List<T>
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public List<?> find(Query query, Class<?> clazz, String collectionName) {
@@ -88,7 +88,7 @@ public abstract class MongoCommonDao<T> {
      * @return T
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public T findOne(Query query) {
@@ -103,7 +103,7 @@ public abstract class MongoCommonDao<T> {
      * @return T
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public T findOne(Query query, String collectionName) {
@@ -119,7 +119,7 @@ public abstract class MongoCommonDao<T> {
      * @return java.lang.Object
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public Object findOne(Query query, Class<?> clazz, String collectionName) {
@@ -134,7 +134,7 @@ public abstract class MongoCommonDao<T> {
      * @return void
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public void update(Query query, Update update) {
@@ -150,7 +150,7 @@ public abstract class MongoCommonDao<T> {
      * @return void
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public void update(Query query, Update update, String collectionName) {
@@ -167,7 +167,7 @@ public abstract class MongoCommonDao<T> {
      * @return void
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public void update(Query query, Update update, Class<?> clazz, String collectionName) {
@@ -181,7 +181,7 @@ public abstract class MongoCommonDao<T> {
      * @return T
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public T save(T entity) {
@@ -197,7 +197,7 @@ public abstract class MongoCommonDao<T> {
      * @return T
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public T save(T entity, String collectionName) {
@@ -213,7 +213,7 @@ public abstract class MongoCommonDao<T> {
      * @return void
      * @author 阿导
      * @time 2018/1/9
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
     public void saveBatch(List<T> t, String collectionName) {
         mongoTemplate.insert(t, collectionName);
@@ -227,7 +227,7 @@ public abstract class MongoCommonDao<T> {
      * @return void
      * @author 阿导
      * @time 2018/1/9
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
     public void remove(Query query, String collectionName) {
         if (mongoTemplate.exists(query, collectionName)) {
@@ -240,7 +240,7 @@ public abstract class MongoCommonDao<T> {
      *
      * @author 阿导
      * @time 2018/1/9
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      * @param collectionName
      * @return void
      */
@@ -256,7 +256,7 @@ public abstract class MongoCommonDao<T> {
      * @return T
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public T findById(String id) {
@@ -271,7 +271,7 @@ public abstract class MongoCommonDao<T> {
      * @return T
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public T findById(String id, String collectionName) {
@@ -287,7 +287,7 @@ public abstract class MongoCommonDao<T> {
      * @return com.dao.base.mongoutil.Page<T>
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public Page<T> findPage(Integer pageNum, Integer pageSize, Query query) {
@@ -319,7 +319,7 @@ public abstract class MongoCommonDao<T> {
      * @return com.dao.base.mongoutil.Page<T>
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
     public Page<T> findPage(Integer pageNum, Integer pageSize, Query query,String collectionName) {
         //获取分页总数
@@ -345,7 +345,7 @@ public abstract class MongoCommonDao<T> {
      * @description
      * @author 阿导
      * @time 2018-01-05
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
 
     public long count(Query query) {
@@ -364,7 +364,7 @@ public abstract class MongoCommonDao<T> {
      * @return java.util.List<T>
      * @author 阿导
      * @time 2018/1/6
-     * @CopyRight 杭州微财网络科技有限公司
+     * @CopyRight 万物皆导
      */
     public List<T> sum(String collectionName, MatchOperation match, GroupOperation group) {
         // Aggregation.match(Criteria.where("oid").is(orderId))
